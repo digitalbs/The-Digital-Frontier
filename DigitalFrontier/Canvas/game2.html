@@ -1,0 +1,50 @@
+<!DOCTYPE >
+<html lang="en">
+	<head>
+		<title>Canvas Demo</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Dosis:200,400|Poiret+One|Advent+Pro:400,200' rel='stylesheet' type='text/css'>
+
+		<link href="Styles/game2.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="Scripts/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="Scripts/game2.js"></script>
+	</head>
+	<body>
+		<div id="game">
+			<div id="gameUI">
+				<div id="gameIntro">
+					<h1>ASTEROIDS</h1>
+					<p><a id="gamePlay" class="button" href="javascript:void(0);">Play</a></p>
+					<br/>
+					<h3>How to Play</h3>
+					<p>Use arrow keys to move and to start game: &larr;, &uarr;, &rarr;, &darr;<br/> press a for afterburn</p>
+				</div>
+				<div id="gameStats">
+					<p>Time: <span class="gameScore"></span> seconds</p>
+					<p><a class="gameReset" href="javascript:void(0);">Reset</a></p>
+				</div>
+				<div id="gameComplete">
+					<h1>Game Over!</h1>
+					<p>You survived for <span class="gameScore"></span> seconds.</p>
+					<p><a class="gameReset" href="javascript:void(0);">Play Again</a></p>
+				</div>
+			</div>
+			<canvas id="canvasGame">
+				<h1>Sorry, you must upload your browser to play this game</h1>
+			</canvas>
+			
+			<audio id="gameSoundBackground" loop>
+				<source src="Sounds/derezzed.mp3" />
+			</audio>	
+			
+			<audio id="gameSoundThrust" loop>
+				<source src="Sounds/thrusters.mp3" />
+			</audio>	
+			
+			<audio id="gameSoundDeath">
+				<source src="Sounds/explosion.mp3" />
+			</audio>	
+		</div>
+		
+	</body>
+</html>

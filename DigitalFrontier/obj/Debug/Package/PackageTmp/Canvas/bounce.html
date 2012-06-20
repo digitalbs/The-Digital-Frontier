@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas Animation Test Page</title>
+    <link rel="stylesheet" href="Stylesheets/common.css">
+  </head>
+  <body>
+    <header>
+      <h1>Canvas Animation Test Page</h1>
+    </header>
+    <canvas id="canvas"></canvas>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="lib/utils.js" type="text/javascript"></script>
+    <script src="objects/ball.js" type="text/javascript"></script>
+    <script>
+    
+    
+    window.onload = function () {
+    	
+      var canvas = document.getElementById('canvas'),
+          context = canvas.getContext('2d'),
+          ball = new Ball(),
+          vx = Math.random() * 30 - 5,
+          vy = Math.random() * 10 - 5,
+          friction = 0.95;
+          
+      canvas.width = $(window).width();
+      canvas.height = $(window).height();
+
+	  ball.x = canvas.width / 2;
+	  ball.y = canvas.height / 2;
+      
+      (function drawFrame(){
+      		window.requestAnimationFrame(drawFrame, canvas);
+      		context.clearRect(0, 0, canvas.width, canvas.height);
+      		
+      		//set boundaries
+      		var speed = Math.sqrt(vx * vx + vy * vy),
+      			angle = Math.atan2(vy, vx);
+      			left = 0,
+      			right = canvas.width,
+      			top = 0,
+      			bottom = canvas.height;
+      		
+      			
+			if(speed > friction)
+			{
+				speed -= friction;
+			}
+			else
+			{
+				speed = 0;
+			}
+			  
+			//right way for friction    		  
+			//vx = Math.cos(angle) * speed;
+			//vy = Math.sin(angle) * speed;
+			
+			//easy way for friction
+			
+			if(Math.abs(vx) > 0.01)
+			{
+				vx *= friction;
+				ball.x += vx;	
+			}
+			
+			if(Math.abs(vy) > 0.01)
+			{
+				vy *= friction;
+				ball.y += vy;				
+			}
+			
+						      		      		
+      		ball.draw(context);
+      }());
+	  	  
+    };
+    </script>
+  </body>
+</html>

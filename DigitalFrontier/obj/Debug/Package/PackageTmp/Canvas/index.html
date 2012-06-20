@@ -1,0 +1,31 @@
+<!DOCTYPE >
+<html lang="en">
+	<head>
+		<title>Canvas Demo</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Dosis:200,400|Poiret+One|Advent+Pro:400,200' rel='stylesheet' type='text/css'>
+
+		<link href="Styles/Canvas.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="Scripts/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="Scripts/canvas.js"></script>
+	</head>
+	<body>
+		<canvas id="videoCanvas">
+			
+		</canvas>
+		<div id="pixelColor" style="position:absolute; bottom:10px; left:10px;">
+			<h2>Pixel It Up <span></span></h2>
+			<p>Pixels per row and column</p>
+			<form id="pixelCalculator">
+				<input type="hidden" value="" id="pixelNumber" />
+				<input type="text" maxlength="3"  placeholder="Enter How Many Pixels to Show" id="inputPixels" /> 
+				Circular instead? <input type="checkbox" id='chckCircular' /><br/>
+				<input type="submit" id="btnPixelClick" value="Submit" />
+				<input type="button" id='btnResetImage' value='Reset' />
+				<input type="button" id="btnInvertColor" value="Invert" />
+				<input type="button" id="btnGrayscale" value="Grayscale" />
+				<input type="button" id='btnSaveImage' value='Save' />
+			</form>
+		</div>
+	</body>
+</html>

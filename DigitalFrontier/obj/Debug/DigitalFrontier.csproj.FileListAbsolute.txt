@@ -1,0 +1,10 @@
+D:\Workspace\The-Digital-Frontier\DigitalFrontier\DigitalFrontier\bin\DigitalFrontier.dll
+D:\Workspace\The-Digital-Frontier\DigitalFrontier\DigitalFrontier\bin\DigitalFrontier.pdb
+D:\Workspace\The-Digital-Frontier\DigitalFrontier\DigitalFrontier\obj\Debug\ResolveAssemblyReference.cache
+D:\Workspace\The-Digital-Frontier\DigitalFrontier\DigitalFrontier\obj\Debug\DigitalFrontier.dll
+D:\Workspace\The-Digital-Frontier\DigitalFrontier\DigitalFrontier\obj\Debug\DigitalFrontier.pdb
+F:\Workspace\DigitalFrontier\bin\DigitalFrontier.dll
+F:\Workspace\DigitalFrontier\bin\DigitalFrontier.pdb
+F:\Workspace\DigitalFrontier\obj\Debug\ResolveAssemblyReference.cache
+F:\Workspace\DigitalFrontier\obj\Debug\DigitalFrontier.dll
+F:\Workspace\DigitalFrontier\obj\Debug\DigitalFrontier.pdb

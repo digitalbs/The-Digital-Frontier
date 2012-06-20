@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas Animation Test Page</title>
+    <link rel="stylesheet" href="Stylesheets/common.css">
+  </head>
+  <body>
+    <header>
+      <h1>Canvas Animation Test Page</h1>
+    </header>
+    <canvas id="canvas"></canvas>
+    <div id="colorSelection">
+    	<ul>
+    		<li id='red'>Red</li>
+    		<li id='blue'>Blue</li>
+    		<li id='black'>Black</li>
+    	</ul>
+    	
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="lib/utils.js" type="text/javascript"></script>
+    <script>
+    
+    
+    window.onload = function () {
+    	
+      var canvas = document.getElementById('canvas'),
+          context = canvas.getContext('2d'),
+          mouse = utils.captureMouse(canvas); 
+      
+      canvas.width = $(window).width();
+      canvas.height = $(window).height();
+      
+      var color;
+      $('li').bind('click', function(){
+      	color = $(this).attr('id');
+      });
+      
+      function onMouseMove()
+      {
+      	context.strokeStyle = color;
+      	context.lineTo(mouse.x, mouse.y);
+      	context.stroke();
+      }
+      
+      canvas.addEventListener('mousedown', function(){
+      		context.beginPath();
+      		context.moveTo(mouse.x, mouse.y);
+      		canvas.addEventListener('mousemove', onMouseMove, false);
+      }, false);
+      
+      canvas.addEventListener('mouseup', function(){
+      		canvas.removeEventListener('mousemove', onMouseMove, false);
+      }, false);
+      
+	  	  
+    };
+    </script>
+  </body>
+</html>

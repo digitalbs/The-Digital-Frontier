@@ -1,0 +1,36 @@
+<!DOCTYPE >
+<html lang="en">
+	<head>
+		<title>Canvas Demo</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Dosis:200,400|Poiret+One|Advent+Pro:400,200' rel='stylesheet' type='text/css'>
+
+		<link href="Styles/game.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="Scripts/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="Scripts/game.js"></script>
+	</head>
+	<body>
+		<div id="game">
+			<div id="gameUI">
+				<div id="gameIntro">
+					<h1>Space Bowling</h1>
+					<p><a id="gamePlay" class="button" href="javascript:void(0);">Play</a></p>
+				</div>
+				<div id="gameStats">
+					<p>Asteroids: <span id="gameRemaining"></span></p>
+					<p>Clicks: <span class="gameScore"></span></p>
+					<p><a class="gameReset" href="javascript:void(0);">Reset</a></p>
+				</div>
+				<div id="gameComplete">
+					<h1>You Win!</h1>
+					<p>Congrats, you completed the game in <span class="gameScore"></span> clicks.</p>
+					<p><a class="gameReset" href="javascript:void(0);">Play Again</a></p>
+				</div>
+			</div>
+			<canvas id="canvasGame" width="350" height="600">
+				<h1>Sorry, you must upload your browser to play this game</h1>
+			</canvas>	
+		</div>
+		
+	</body>
+</html>

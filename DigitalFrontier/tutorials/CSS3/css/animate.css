@@ -1,0 +1,27 @@
+﻿p a
+{
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+input
+{
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+#container
+{
+	-webkit-animation-name: bounceIn;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-duration:1.5s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-timing-function: linear;
+	 animation-name: bounceInDown;
+	 animation-fill-mode: both;
+	 animation-duration: 1.5s;
+	 animation-iteration-count: 1;
+	 animation-timing-function: linear;
+}
