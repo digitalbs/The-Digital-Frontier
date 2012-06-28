@@ -8,3 +8,8 @@ F:\Workspace\DigitalFrontier\bin\DigitalFrontier.pdb
 F:\Workspace\DigitalFrontier\obj\Debug\ResolveAssemblyReference.cache
 F:\Workspace\DigitalFrontier\obj\Debug\DigitalFrontier.dll
 F:\Workspace\DigitalFrontier\obj\Debug\DigitalFrontier.pdb
+C:\Users\brians\Documents\GitHub\The-Digital-Frontier\DigitalFrontier\bin\DigitalFrontier.dll
+C:\Users\brians\Documents\GitHub\The-Digital-Frontier\DigitalFrontier\bin\DigitalFrontier.pdb
+C:\Users\brians\Documents\GitHub\The-Digital-Frontier\DigitalFrontier\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\brians\Documents\GitHub\The-Digital-Frontier\DigitalFrontier\obj\Debug\DigitalFrontier.dll
+C:\Users\brians\Documents\GitHub\The-Digital-Frontier\DigitalFrontier\obj\Debug\DigitalFrontier.pdb

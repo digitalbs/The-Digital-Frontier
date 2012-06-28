@@ -51,7 +51,7 @@ $(function(){
 	var uiReset = $('.gameReset');
 	var uiRemaining = $('#gameRemaining');
 	var uiScore = $('.gameScore');
-	var soundBackground = $('#gameSoundBackground').get(0);
+	//var soundBackground = $('#gameSoundBackground').get(0);
 	var soundThrust = $('#gameSoundThrust').get(0);
 	var soundDeath = $('#gameSoundDeath').get(0);
 	
@@ -143,8 +143,8 @@ $(function(){
 			if(!playGame)
 			{
 				playGame = true;
-				soundBackground.currentTime = 0;
-				soundBackground.play();
+				//soundBackground.currentTime = 0;
+				//soundBackground.play();
 				animate();
 				timer();
 			}
@@ -178,7 +178,11 @@ $(function(){
 			}
 			else if(keyCode == afterburner)
 			{
-				player.afterburn = true;
+			    player.afterburn = true;
+			    if (soundThrust.paused) {
+			        soundThrust.currentTime = 0;
+			        soundThrust.play();
+			    }
 			}
 			
 		});
@@ -207,8 +211,8 @@ $(function(){
 			{
 				player.shoot = false;
 			}
-			else if(keyCode == afterburner)
-			{
+			else if(keyCode == afterburner) {
+			    soundThrust.pause();
 				player.afterburn = false;
 			}
 			
@@ -250,7 +254,7 @@ $(function(){
 		uiReset.click(function(e){
 			e.preventDefault();
 			soundThrust.pause();
-			soundBackground.pause();
+			//soundBackground.pause();
 			clearTimeout(scoreTimeout);
 			$(window).unbind('keyup');
 			$(window).unbind('keydown');
@@ -312,7 +316,7 @@ $(function(){
 				uiStats.hide();
 				uiComplete.show();
 				
-				soundBackground.pause();
+				//soundBackground.pause();
 				$(window).unbind('keyup');
 			
 			}

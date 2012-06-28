@@ -85,6 +85,10 @@ nav select {
   display: none;
 }
 
+/* ===== Initializr Styles =====================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
 .resizableBkgd
 {
 	width: 100%;
@@ -98,70 +102,13 @@ body
 { 
     font:16px/26px Dosis, arial; 
 	padding-top:0;
-    background:#284a70;
-}
-
-.left
-{
-	float:left;
-}
-
-.right
-{
-	float:right;
-}
-
-.bold
-{
-	font-weight:bold;
-}
-
-header h1
-{
-	font-size:2.4em;
-}
-
-#home #main-container, #home #main
-{
-    padding:0;
-}
-
-#home section#left, #home section#btmRight
-{
-    background:rgba(255, 255, 255, 0.6);
-    width:35%;
-    min-width:200px;
-    padding:3%;
-    margin-top:3em;
-}
-
-#home section#btmRight
-{
-    float:right;
-    position:relative;
-}
-
-section#left h1, section#btmRight h1
-{
-    color:#243e6e;
 }
 
 #main
 {
-    width:96%;
-    padding:0 2%;
+    width:94%;
     position:relative;
-    background:rgba(255, 255, 255, 0.6);
 }
-
-
-#home #main
-{
-    background:transparent;
-    padding:0;
-    width:100%;
-}
-
 
 .lt-ie9 #main
 {
@@ -175,7 +122,6 @@ section#left h1, section#btmRight h1
 footer
 {
     background:none;
-    color:#fff;
 }
 
 h1#logo, h2#subtitle
@@ -251,80 +197,6 @@ nav select
     border-bottom:0;
 }
 
-/* Bio */
-#bio
-{
-	overflow:hidden;
-}
-
-section#left #bio h1
-{
-	font-weight:bold;
-	font-size:4em;
-	color:#000;
-	margin:.5em 0 ;
-}
-
-#bio h2, #bio h3, #bio h4
-{
-	margin:.2em;
-}
-
-#bio h2.quote
-{
-	font-weight:bold;
-	font-size:2.3em;
-}
-
-#bio h3
-{
-	font-size:1.8em;
-}
-
-#bio h4
-{
-	font-size:1.5em;
-}
-
-article#life
-{
-	float:left;
-	clear:both;
-}
-
-article#life h4
-{
-	color:#000;
-	margin:1em 0 .2em 0;
-}
-
-#twitterFeed h2 img
-{
-	display:inline;
-	width:50px;
-}
-
-#twitterFeed li
-{
-	border-bottom:1px solid #777;
-	padding:.5em 0;
-}
-
-#twitterFeed li:last-child
-{
-	border-bottom:none;
-}
-
-.twtime
-{
-	font-size:.8em;
-}
-
-#twitterFeed #viewmoretweets
-{
-	float:right;
-}
-
 /* ==============
     MOBILE: Menu
    ============== */
@@ -387,7 +259,7 @@ nav a:hover, nav a.active{
 }
 
 nav a:hover{
-	text-decoration:none;
+	
 }
 
 footer nav ul
@@ -398,7 +270,7 @@ footer nav ul
 
 footer nav a
 {
-    color:#fff;
+    color:#333;
 }
 
 /* ==============
@@ -418,6 +290,7 @@ h1#logo
 
 h2#subtitle
 {
+    color:#333;
     font-size:.9em;
     text-align:center;
 }
@@ -460,11 +333,31 @@ aside li a:hover
 
 .ie7 #title{ padding-top:20px; }
 
+
+/* ===== Primary Styles ========================================================
+   Author:
+   ========================================================================== */
+
+
 /* =============================================================================
    Media Queries
    ========================================================================== */
 @media only screen and (min-width: 200px)
 {
+    body
+    {
+        background: #2a486a;
+        background: -webkit-linear-gradient(top, #2a486a, #5ba8c6);
+    }
+    
+    #main
+    {
+        background:rgba(255, 255, 255, 0.7);
+        margin:10px 0;
+        width:92%;
+        padding:0 4%;
+        border-top:1px solid #555;
+    }
     
 	#socialLinks
 	{
@@ -474,32 +367,32 @@ aside li a:hover
     {
         text-decoration:none;
         color:#fff;
-        position:relative;
     }
-   
-   	nav a{
-		float:left;
-		width:25%;
-		margin-bottom:0;
-		text-decoration:none;
-	}
+    nav select
+    {
+        display:inline-block;
+    }
+
+    nav ul
+    {
+        display:none;
+    }
     
     
+    .resizableBkgd
+    {
+        display:none;
+    }
 }
 
 
 @media only screen and (min-width: 480px) {
 	 #main
     {
+        background:transparent;
         margin-top:2em;
-        padding:2%;
-        width:96%;
-        margin:0 auto;
-    }
-    
-    #main-container
-    {
-        padding:0 3%;
+        border-top:0;
+        
     }
     
 	#socialLinks
@@ -513,10 +406,16 @@ aside li a:hover
 	#main aside
 {
     border-top:0;
+    background:rgba(255, 255, 255, 0.7);
     padding:2%;
     margin-top:1em;
 }
 
+article#left
+{
+    background:rgba(255, 255, 255, 0.7);
+    padding:2%;
+}
 
 /* Logo */
 h1#logo a
@@ -535,6 +434,11 @@ h1#logo a
     display:block;
 }
 
+body
+{
+    background:#284a70;
+}
+
 h2#subtitle
 {
     font-size:1.2em;
@@ -544,25 +448,24 @@ h2#subtitle
 #hdrRight
 {
     float:right;
-    width:300px;
     margin-top:4.85em;
     position:relative;
 }
 
-nav select
-{
-    display:none;
-}
+    nav select
+    {
+        display:none;
+    }
 
-nav ul
-{
-    display:block;
-    -webkit-border-radius:0;
-    -moz-border-radius:0;
-    border-radius:0;
-    margin:0;
-    width:100%;
-}
+    nav ul
+    {
+        display:block;
+        -webkit-border-radius:0;
+        -moz-border-radius:0;
+        border-radius:0;
+        margin:0;
+        width:100%;
+    }
 
 /* ====================
     INTERMEDIATE: Menu
@@ -602,24 +505,29 @@ nav ul
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
+
+
+
+body
+{
+    /*
+    background:url(../img/background/bkgdTech.jpg) no-repeat center 20px fixed;
+    background:#eff3c3;
+    background:-webkit-linear-gradient(top, #eff3c3, #fff);
+    background:-moz-linear-gradient(top, #eff3c3, #fff);
+    background:-o-linear-gradient(top, #eff3c3, #fff);
+    background:-ms-linear-gradient(top, #eff3c3,#fff);
+    */
+}
+
 footer
 {
-    color:#fff;
+    color:#222;
 }
 
 	#main aside
 {
     padding:0px 2% 10px;
-}
-
-    #home section#btmRight
-    {
-        margin-top:14em;
-    }
-
-#main
-{
-    background:transparent;
 }
 
 #main-container
@@ -650,26 +558,9 @@ footer
     WIDE: Main
    ============ */
 
-	#main section#left{
+	#main article#left{
 		float:left;
 		width:56%;
-		background:rgba(255, 255, 255, 0.7);
-		padding:0 2%;
-		-webkit-border-radius:10px;
-		-moz-border-radius:10px;
-		-o-border-radius:10px;
-		-ms-border-radius:10px;
-		border-radius:10px;
-	}
-	
-	#home section#left
-	{
-	    width:35%;
-	    -webkit-border-radius:0px;
-		-moz-border-radius:0px;
-		-o-border-radius:0px;
-		-ms-border-radius:0px;
-		border-radius:0px;
 	}
 		
 		

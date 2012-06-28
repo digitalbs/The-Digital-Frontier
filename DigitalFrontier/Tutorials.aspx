@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="DigitalFrontier.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Tutorials.aspx.cs" Inherits="DigitalFrontier.Tutorials" %>
 
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>The Digital Frontier - Home</title>
+	<title>The Digital Frontier - Tutorials</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -22,10 +22,10 @@
     <script src="js/home.js" type="text/javascript"></script>
     <script src="js/common.js" type="text/javascript"></script>
 </head>
-<body id="home">
+<body>
     <!-- background image for whole site -->
     <img src="Img/Background/digitalFrontier.jpg" alt="Digital Frontier" class="resizableBkgd" />
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 	<div id="header-container">
 		<header class="wrapper clearfix">
@@ -41,7 +41,7 @@
 			<nav>
 				<ul>
 					<li><a href="Blog.aspx">The Blog</a></li>
-					<li><a href="Tutorials.aspx">Tutorials</a></li>
+					<li><a class="active" href="Tutorials.aspx">Tutorials</a></li>
                     <li><a href="Bio.aspx">Bio</a></li>
 					<li><a href="Contact.aspx">Contact</a></li>
 				</ul>
@@ -52,13 +52,25 @@
 		<div id="main" class="wrapper clearfix">
 			
 			<section id="left">
-				<h1>Let's start with the basics...</h1>
-				<p>I've always had a passion for emerging technology.</p>
+				<header>
+					<h1>Tutorials...</h1>
+				</header>
+				<section id="tutorials">
+                    <p>Coming Soon</p>
+                </section>
 			</section>
-            <section id="btmRight">
-                <h1>Why build this?</h1>
-                <p>This site encompasses my ideas, as well as findings on the digital space that I work in everyday. Explore above &#8593;</p>
-            </section>
+	
+            <aside>
+				<h2>Examples</h2>
+				<p>Below are links to examples of canvas demos that I have built.</p>
+                <ul>
+                    <li><a href="Canvas/asteroids.html" target="_blank">Asteroid Game</a></li>
+                    <li><a href="Canvas/fountain.html" target="_blank">Fountain</a></li>
+                    <li><a href="Canvas/throw.html" target="_blank">Throw the ball</a></li>
+                    <li><a href="Canvas/spring.html" target="_blank">Ball on a String</a></li>
+                </ul>
+			</aside>
+
 		</div> <!-- #main -->
 
         <footer class="wrapper">
@@ -85,7 +97,6 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
 </body>
 </html>
 

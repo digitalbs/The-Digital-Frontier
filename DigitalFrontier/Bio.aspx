@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="DigitalFrontier.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Bio.aspx.cs" Inherits="DigitalFrontier.Bio" %>
 
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>The Digital Frontier - Home</title>
+	<title>The Digital Frontier - Bio</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -22,10 +22,10 @@
     <script src="js/home.js" type="text/javascript"></script>
     <script src="js/common.js" type="text/javascript"></script>
 </head>
-<body id="home">
+<body>
     <!-- background image for whole site -->
     <img src="Img/Background/digitalFrontier.jpg" alt="Digital Frontier" class="resizableBkgd" />
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 	<div id="header-container">
 		<header class="wrapper clearfix">
@@ -42,7 +42,7 @@
 				<ul>
 					<li><a href="Blog.aspx">The Blog</a></li>
 					<li><a href="Tutorials.aspx">Tutorials</a></li>
-                    <li><a href="Bio.aspx">Bio</a></li>
+                    <li><a class="active" href="Bio.aspx">Bio</a></li>
 					<li><a href="Contact.aspx">Contact</a></li>
 				</ul>
 			</nav>
@@ -52,13 +52,37 @@
 		<div id="main" class="wrapper clearfix">
 			
 			<section id="left">
-				<h1>Let's start with the basics...</h1>
-				<p>I've always had a passion for emerging technology.</p>
+				<header>
+					<h1>Bio...</h1>
+				</header>
+				<section id="bio">
+                    <header>
+                        <h1>I...</h1>
+                        <h2 class="quote">Push the Envelope</h2>
+                        <h3 class="left">Solve Problems</h3>
+                        <h2 class="quote left">am Passionate</h2>
+                        <h3 class="bold left">Influence Peers</h3>                    
+                        <h3 class="left">am Open Minded</h3>
+                        <h4 class="left">Collaborate</h4>
+                    </header>
+                    <article id="life">
+                        <h4>Above is who I am in the most simpliest of terms.</h4>
+                        <p>Ever since I can remember I've always had a passion of how things work. I would break an item down and put it back together just to see how everything worked.
+                        Over the years, I've used this curosity as a skill in my day to day learning in life, as well as my professional career developing for the digital landscape. I didn't come from a technical background, but I got here as fast as I could.</p>
+                        <p></p>
+                    </article>
+                </section>
 			</section>
-            <section id="btmRight">
-                <h1>Why build this?</h1>
-                <p>This site encompasses my ideas, as well as findings on the digital space that I work in everyday. Explore above &#8593;</p>
-            </section>
+	
+            <aside id="twitterFeed">
+				<h2>Twitter Feed <img src="img/logos/twitter_blue_logo.png" alt="Twitter" /></h2>
+				<ul>
+                    <!-- Twitter Feed Here -->
+                </ul>
+                <a id="viewmoretweets" href="http://twitter.com/d1g1talfr0ntier/" target="_blank">view more</a>
+                <%--<%= post %>--%>
+			</aside>
+
 		</div> <!-- #main -->
 
         <footer class="wrapper">
@@ -85,7 +109,5 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
 </body>
 </html>
-
