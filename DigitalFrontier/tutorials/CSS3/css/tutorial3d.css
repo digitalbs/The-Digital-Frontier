@@ -1,0 +1,72 @@
+﻿section#full
+{
+	-webkit-perspective:1000;
+	-moz-perspective:1000;
+	-ms-perspective:1000;
+}
+
+section#full:hover .card
+{
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	-ms-transform:rotateY(180deg);
+}
+
+.prevPages
+{
+	width:100%;
+	min-height:500px;
+	height:auto!important;
+	height:500px;
+	background:#fff;
+}
+
+.card
+{
+	position:relative;
+	top:-500px;
+	z-index:10;
+	clear:both;
+	min-height:500px;
+	height:auto !important;
+	height:500px;
+	-webkit-transform-style:preserve-3d;
+	-webkit-transition:0.5s;
+	-moz-transform-style:preserve-3d;
+	-moz-transition:0.5s;
+	-ms-transform-style:preserve-3d;
+	-ms-transition:0.5s;
+}
+
+.face
+{
+	position:absolute;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	top:0;
+	left:0;
+	width:50%;
+	height:100%;
+	color:#fff;	
+	text-align:center;
+}
+
+.front
+{
+	background:#333;
+	z-index:10;
+}
+
+.front h2
+{
+	color:#fff;
+}
+
+.back
+{
+	background:#c40404;
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	-ms-transform:rotateY(180deg);
+}

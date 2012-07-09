@@ -56,7 +56,7 @@
 					<h1>The blog...</h1>
 				</header>
 				<article id="blog">
-                    <%--<%= post %>--%>
+                    <%= post %>
                 </article>
 			</section>
 	
