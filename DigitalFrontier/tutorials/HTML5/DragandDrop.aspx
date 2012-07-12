@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>The Digital Frontier - Tutorial - Drag and Drop</title>
+	<title>The Digital Frontier - Demo - Drag and Drop</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -29,7 +29,7 @@
 
 	<div id="header-container">
 		<header class="wrapper clearfix">
-			<h1 id="logo"><a href="Default.aspx">The Digital Frontier</a></h1>
+			<h1 id="logo"><a href="/Default.aspx">The Digital Frontier</a></h1>
             <section id="hdrRight">
 				<h2 id="subtitle">My journey into the digital wilderness</h2>
 				<ul id="socialLinks">

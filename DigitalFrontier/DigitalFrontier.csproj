@@ -106,6 +106,23 @@
     <Content Include="Canvas\throw.html" />
     <Content Include="Canvas\touch.html" />
     <Content Include="Contact.aspx" />
+    <Content Include="css\sh\shCore.css" />
+    <Content Include="css\sh\shCoreDefault.css" />
+    <Content Include="css\sh\shCoreDjango.css" />
+    <Content Include="css\sh\shCoreEclipse.css" />
+    <Content Include="css\sh\shCoreEmacs.css" />
+    <Content Include="css\sh\shCoreFadeToGrey.css" />
+    <Content Include="css\sh\shCoreMDUltra.css" />
+    <Content Include="css\sh\shCoreMidnight.css" />
+    <Content Include="css\sh\shCoreRDark.css" />
+    <Content Include="css\sh\shThemeDefault.css" />
+    <Content Include="css\sh\shThemeDjango.css" />
+    <Content Include="css\sh\shThemeEclipse.css" />
+    <Content Include="css\sh\shThemeEmacs.css" />
+    <Content Include="css\sh\shThemeFadeToGrey.css" />
+    <Content Include="css\sh\shThemeMDUltra.css" />
+    <Content Include="css\sh\shThemeMidnight.css" />
+    <Content Include="css\sh\shThemeRDark.css" />
     <Content Include="css\style.css" />
     <Content Include="css\style2.css" />
     <Content Include="Default.aspx" />
@@ -128,6 +145,35 @@
     <Content Include="js\libs\easeljs-NEXT.min.js" />
     <Content Include="js\libs\jquery-1.7.2.min.js" />
     <Content Include="js\libs\modernizr-2.5.3-respond-1.1.0.min.js" />
+    <Content Include="js\libs\sh\shAutoloader.js" />
+    <Content Include="js\libs\sh\shBrushAppleScript.js" />
+    <Content Include="js\libs\sh\shBrushAS3.js" />
+    <Content Include="js\libs\sh\shBrushBash.js" />
+    <Content Include="js\libs\sh\shBrushColdFusion.js" />
+    <Content Include="js\libs\sh\shBrushCpp.js" />
+    <Content Include="js\libs\sh\shBrushCSharp.js" />
+    <Content Include="js\libs\sh\shBrushCss.js" />
+    <Content Include="js\libs\sh\shBrushDelphi.js" />
+    <Content Include="js\libs\sh\shBrushDiff.js" />
+    <Content Include="js\libs\sh\shBrushErlang.js" />
+    <Content Include="js\libs\sh\shBrushGroovy.js" />
+    <Content Include="js\libs\sh\shBrushJava.js" />
+    <Content Include="js\libs\sh\shBrushJavaFX.js" />
+    <Content Include="js\libs\sh\shBrushJScript.js" />
+    <Content Include="js\libs\sh\shBrushPerl.js" />
+    <Content Include="js\libs\sh\shBrushPhp.js" />
+    <Content Include="js\libs\sh\shBrushPlain.js" />
+    <Content Include="js\libs\sh\shBrushPowerShell.js" />
+    <Content Include="js\libs\sh\shBrushPython.js" />
+    <Content Include="js\libs\sh\shBrushRuby.js" />
+    <Content Include="js\libs\sh\shBrushSass.js" />
+    <Content Include="js\libs\sh\shBrushScala.js" />
+    <Content Include="js\libs\sh\shBrushSql.js" />
+    <Content Include="js\libs\sh\shBrushVb.js" />
+    <Content Include="js\libs\sh\shBrushXml.js" />
+    <Content Include="js\libs\sh\shCore.js" />
+    <Content Include="js\libs\sh\shLegacy.js" />
+    <Content Include="js\libs\sh\XRegExp.js" />
     <Content Include="js\libs\utils.js" />
     <Content Include="js\script.js" />
     <Content Include="robots.txt" />
@@ -139,6 +185,7 @@
     <Content Include="tutorials\CSS3\css\tutorial3d.css" />
     <Content Include="tutorials\CSS3\default.aspx" />
     <Content Include="tutorials\CSS3\ThreeD.aspx" />
+    <Content Include="tutorials\draganddrop.aspx" />
     <Content Include="tutorials\HTML5\css\dnd.css" />
     <Content Include="tutorials\HTML5\DragandDrop.aspx" />
     <Content Include="tutorials\images\MonsterAIdle.png" />
@@ -195,6 +242,13 @@
     </Compile>
     <Compile Include="tutorials\CSS3\ThreeD.aspx.designer.cs">
       <DependentUpon>ThreeD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\draganddrop.aspx.cs">
+      <DependentUpon>draganddrop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\draganddrop.aspx.designer.cs">
+      <DependentUpon>draganddrop.aspx</DependentUpon>
     </Compile>
     <Compile Include="tutorials\HTML5\DragandDrop.aspx.cs">
       <DependentUpon>DragandDrop.aspx</DependentUpon>

@@ -29,7 +29,7 @@
 
 	<div id="header-container">
 		<header class="wrapper clearfix">
-			<h1 id="logo"><a href="Default.aspx">The Digital Frontier</a></h1>
+			<h1 id="logo"><a href="/Default.aspx">The Digital Frontier</a></h1>
             <section id="hdrRight">
 				<h2 id="subtitle">My journey into the digital wilderness</h2>
 				<ul id="socialLinks">
